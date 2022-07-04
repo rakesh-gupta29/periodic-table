@@ -1,0 +1,94 @@
+
+.box{
+    border:1px solid rgb(53, 52, 52);
+    height: 5vw; 
+    padding: 0px 2px;
+    border-collapse:collapse ;
+    overflow:hidden ;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    cursor: pointer;
+    font-family: "Manrope",sans-serif;
+}
+.box-1{
+    grid-column-start: 1;
+}
+.box-2,.box-119{
+    grid-column-start: -2;
+}
+.box-119,.box-89{
+    margin-bottom: 20px;
+}
+.box-5,.box-13{
+    grid-column-start: 13;
+}
+.box-57,.box-89{
+    grid-column-start:3 ;
+}
+.box-72,.box-104{
+    grid-column-start: 4;
+}
+
+.alkali{
+    background: rgba(255, 0, 0, 0.568);
+}
+.alkaline{
+    background: rgba(0, 0, 255, 0.5);
+}
+.lanthanide{
+    background: rgba(0, 128, 0, 0.507);
+}
+.actinide{
+    background: rgba(172, 255, 47, 0.507);
+}
+.metalloid{
+    background: rgba(255, 255, 0, 0.507);
+}
+.diatomic{
+    background: rgba(255, 99, 71, 0.5);
+}
+.transition{
+    background: rgba(250, 128, 114, 0.507);
+}
+.polyatomic{
+    background: rgba(46, 139, 86, 0.507);
+}
+.post-transition{
+    background: rgba(105, 90, 205, 0.507);
+}
+.unknown{
+    background: rgba(238, 130, 238, 0.507);
+}
+.noble{
+    background: rgba(139, 69, 19, 0.5);
+}
+
+.box:hover{
+    background-color: #3d3d3d;
+    color: rgb(206, 206, 206);
+    transform: scale(1.1,1.1);
+    transition: all 0.15s;
+    box-shadow: 1px 1px 3px grey;
+
+}
+
+.atomicNumber{
+    line-height: 1vw;
+    float: left;
+    padding-left: 3px;
+    font-size: 1vw;
+    padding-top: 2px;
+}
+.atomicSymbol{
+    text-align: center;
+    font-size: 2.1vw;
+    line-height: 1.9vw;
+ 
+    font-weight: bold ;
+
+}
+.atomicName{
+    text-align: center;
+    font-size: 0.8vw;
+    line-height: 0.8vw;
+}

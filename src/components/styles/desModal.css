@@ -1,0 +1,109 @@
+.modal-wrapper {
+    width: 90vw;
+    height: 80vh;
+    max-width: 750px;
+    max-height: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    z-index: 3;
+    border: 1px solid rgb(177, 174, 174);
+    box-shadow: 2px 3px 3px gray ;
+    transition: all 0.3s;
+    overflow: auto;
+    
+}
+.action-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px ;
+    border-bottom: 1px solid #d8d8d8;
+}
+.action-wrapper .inc-des-wrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 15px;
+}
+.action-wrapper button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #3d3d3d;
+    font-size: 17px;
+    font-family: "Manrope",sans-serif;
+}
+.action-wrapper button:hover {
+    background-color: #3d3d3d;
+    color: #d8d8d8;
+    cursor: pointer;
+}
+.modal-hidden {
+    height: 0;
+    width: 0;
+    border: 0;
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope",sans-serif;
+    font-size: 15px;
+    color: #3d3d3d;
+    gap: 7px ;
+    padding: 15px 18px ;
+}
+.info-wrapper span{
+    font-size: 15px;
+ 
+}
+.info-wrapper span span{
+    font-weight: bold;
+    font-size: 16px !important;;
+
+}
+.info-wrapper span a{
+    font-weight: bold;
+    font-size: 16px !important;
+    padding-left: 15px;
+    margin-top: 35px ;
+
+}
+.elem-name {
+    font-size: xx-large !important;
+    color: rgb(4, 4, 133) ;
+}
+.elem-view {
+    height: 150px;
+    width: 190px;
+    border:1px solid #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    margin: 15px auto;
+    flex-direction: column;
+}
+.elem-view .view-main {
+    flex: 1;
+    font-size:75px;
+    color: blue;
+    display: grid;
+    place-content: center;
+    font-family: "Inter",sans-serif;
+}
+.elem-view .view-top{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-family: "Manrope",sans-serif;
+}
+.elem-view .view-name{
+    font-family: "Inter",sans-serif;
+    font-size: large ;
+    color: #3d3d3d;
+    text-align: center;
+}
